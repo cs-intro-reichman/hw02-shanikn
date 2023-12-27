@@ -11,10 +11,10 @@ public class DamkaBoard {
 				System.out.print("*");
 			}
 			System.out.println();
-			if(i%2==0)
-			{
-				System.out.print(" ");
-			}
+			//if(i%2==0)
+			//{
+			//	System.out.print(" ");
+			//}
 		}
 	}
 }
