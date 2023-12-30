@@ -15,10 +15,10 @@ public class Reverse {
 		int x=s.length();
 		if(x%2==0)
 		{
-			System.out.println("The middle character is "+s.charAt(x/2));
+			System.out.println("The middle character is "+s.charAt((x/2)-1));
 		}
 		
-		if(x%2==1)
+		else
 		{
 			System.out.println("The middle character is "+s.charAt(x/2));
 		}
