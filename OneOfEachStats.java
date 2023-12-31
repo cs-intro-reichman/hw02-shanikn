@@ -10,7 +10,7 @@ import java.util.Random;
 public class OneOfEachStats {
 	public static void main (String[] args) {
 		// Gets the two command-line arguments
-		double T = Double.parseDouble(args[0]);
+		int T = Integer.parseInt(args[0]);
 		int seed = Integer.parseInt(args[1]);
 		// Initailizes a random numbers generator with the given seed value
         Random generator = new Random(seed);  
@@ -24,7 +24,7 @@ public class OneOfEachStats {
 		for(int i=0;i<T;i++)
 		{
 			//OneOfEach
-			int x;
+			double x;
 			int b=0;
 			int g=0;
 			double children=0.0;
@@ -32,8 +32,8 @@ public class OneOfEachStats {
 			while(b<1 || g<1)
 			{
 				children=children+1.0;
-				x=generator.nextInt();
-				if(x%2==0)
+				x=generator.nextDouble();
+				if(x>=0.5) //x%2==0
 				{
 					b++;
 				}
